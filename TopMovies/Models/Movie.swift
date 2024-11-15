@@ -17,10 +17,8 @@ struct Movie: Identifiable, Codable {
     let backdropPath: String?
     
     var posterURL: URL? {
-        guard let path = backdropPath else {
-            return nil
-        }
-        return URL(string: "https://image.tmdb.org/t/p/w500\(path)")
+        guard let backdropPath = backdropPath else { return nil }
+        return URL(string: "https://image.tmdb.org/t/p/w500\(backdropPath)")
     }
     
     var backdropURL: URL {

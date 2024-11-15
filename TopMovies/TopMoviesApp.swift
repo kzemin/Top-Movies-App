@@ -11,13 +11,13 @@ import SwiftUI
 struct TopMoviesApp: App {
     @StateObject var mvm = MoviesViewModel()
     
-    // Modifier for custom NavigationTitle font and color
+    // Modifier for custom NavigationTitle size and color
     init() {
         let appear = UINavigationBarAppearance()
 
         let atters: [NSAttributedString.Key: Any] = [
-            .font: UIFont(name: "NetflixSans-Bold", size: 30) ?? UIFont.systemFont(ofSize: 30),
-            .foregroundColor: UIColor(named: "darkGreen") ?? UIColor.green
+            .font: UIFont.systemFont(ofSize: 30, weight: .bold),
+            .foregroundColor: UIColor.white
         ]
 
         appear.largeTitleTextAttributes = atters

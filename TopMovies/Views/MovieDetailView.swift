@@ -86,7 +86,7 @@ struct MovieDetailView: View {
                             .bold()
                             .frame(width: 20, height: 20)
                         
-                        Text("Save for later")
+                        Text("Watch later")
                             .font(.NetflixSansBold(size: 17))
                     }
                     .foregroundColor(.white)

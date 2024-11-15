@@ -19,11 +19,10 @@ struct LoadingScreenView: View {
             
             VStack(alignment: .leading) {
                 Text("Top \nRated")
-                    .font(.NetflixSansBold(size: 40))
                 
                 Text("Movies 🍿")
-                    .font(.NetflixSansLight(size: 40))
             }
+            .font(.system(size: 40).bold())
             .foregroundColor(.white)
             .shadow(radius: 8)
             .offset(x: 0, y: offset)

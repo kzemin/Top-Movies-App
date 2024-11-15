@@ -20,11 +20,14 @@ struct ContentView: View {
                         Rectangle()
                             .fill(Color.clear)
                             .frame(height: UIScreen.main.bounds.width * 0.1)
-                            .background(LinearGradient(colors: [Color("lightGreen").opacity(0.3), .blue.opacity(0.4)], startPoint: .topLeading, endPoint: .bottomTrailing))
+                            .background(Color("darkGreen"))
                             .padding(-15)
                         
                         MovieListView()
+                            .edgesIgnoringSafeArea(.bottom)
+                            .background(Color.red)
                     }
+                    .navigationTitle("Top Rated Movies 🍿")
                 }
             }
             .onAppear {

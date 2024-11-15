@@ -39,4 +39,3 @@ struct CheckmarkDialog: View {
 #Preview {
     CheckmarkDialog(isActive: .constant(false))
 }
-
